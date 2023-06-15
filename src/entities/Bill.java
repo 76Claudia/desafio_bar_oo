@@ -22,24 +22,22 @@ public class Bill {
 	}
 	
 	public double cover() {
-	   int feeding = 0;
-	if (feeding > 30) {
+	   
+	if (feeding() > 30) {
 		return 0.0;
 	}
 	   else {
+		   
 		   return 4.0;
 	   }
 	
 	}
-	public double total() {
-		
-			int cover = 0;
-			int ticket = 0;
-			int feeding = 0;
-			return feeding + cover + ticket;
+	
+	    public double total() {
+	           return feeding() + ticket() + cover();
+	    	}	
+	    
 	}
-    
-    
-	}
+	    
 
 

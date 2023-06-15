@@ -32,17 +32,18 @@ public class Program {
 	
 		if (bill.feeding() > 30.0) {
 			System.out.println("Isento de cover");
-			
 		}
+		
 		else {
 			System.out.printf("Cover = R$ %.2f%n", bill.cover());	
 		}
 		
 		System.out.printf("Ingresso = R$ %.2f%n", bill.ticket());
 		System.out.println();
+		
 		System.out.printf("Valor a pagar = R$ %.2f%n", bill.total());
-	
-		sc.close();
+		
+			sc.close();
 
 	}
 
